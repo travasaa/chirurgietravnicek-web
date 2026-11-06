@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDr. Adam Trávníček | Chirurgická ambulance</title>
+    <meta name="description" content="Chirurgická ambulance a ordinace - MUDr. Adam Trávníček. Brno a Moravský Krumlov.">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #003d80;
+            --text: #2c3e50;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --border: #e9ecef;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            color: var(--text);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            padding: 20px 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 5px solid var(--primary);
+        }
+
+        h1 {
+            color: var(--primary-dark);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #6c757d;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 8px;
+        }
+
+        .workplaces {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .workplaces {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .workplace {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .workplace h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+
+        .workplace p {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .days {
+            display: inline-block;
+            background: #e7f1ff;
+            color: var(--primary-dark);
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        ul.services {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        @media (min-width: 600px) {
+            ul.services {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        ul.services li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul.services li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>MUDr. Adam Trávníček</h1>
+        <p class="subtitle">Atestovaný chirurg | Ambulantní péče & operační výkony</p>
+    </header>
+
+    <div class="card">
+        <h2>Kde ordinuji & Působiště</h2>
+        <div class="workplaces">
+            
+            <div class="workplace">
+                <span class="days">Pondělí & Úterý</span>
+                <h3>Nemocnice u Milosrdných bratří</h3>
+                <p>Polní 553/3, Brno</p>
+                <p><em>Chirurgická ambulance & sál</em></p>
+            </div>
+
+            <div class="workplace">
+                <span class="days">Středa – Pátek</span>
+                <h3>Chirurgická ambulance</h3>
+                <p>Gajdošova 7, Brno</p>
+                <p><em>(Dr. Vašíček / Dr. Trávníček)</em></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Zaměření a výkony</h2>
+        <ul class="services">
+            <li>Všeobecná a ambulantní chirurgie</li>
+            <li>Operace syndromu karpálního tunelu</li>
+            <li>Odstraňování kožních a podkožních útvarů</li>
+            <li>Ošetření úrazů a popálenin</li>
+            <li>Konzultace před plánovanými zákroky</li>
+        </ul>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <h2>Hodnocení a objednání</h2>
+        <p style="margin-bottom: 15px;">Profil a hodnocení pacientů najdete také na portálu ZnamýLékař.</p>
+        <a href="https://www.znamylekar.cz" target="_blank" rel="noopener" class="btn">Zobrazit profil na ZnamýLékař</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MUDr. Adam Trávníček | chirurgietravnicek.cz</p>
+    </footer>
+</div>
+
+</body>
+</html>
